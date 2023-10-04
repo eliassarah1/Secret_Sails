@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+html, body {
+  width: 100vw;
+  background: linear-gradient(45deg, #D1E5F0, #F6F6F6, #D1E5F0, #F6F6F6, #D1E5F0) !important;
+}
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+.Video {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.EditProfile {
+  width: 104.5%;
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+.EditProfile h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.EditProfile .input {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.EditProfile .text {
+  position: absolute;
+  left: 3%;
+  width: 20%;
+}
+
+.EditProfile input {
+  height: 40px;
+  width: 90%;
+  padding: 5px;
+}
+
+.EditProfile .img {
+  margin-top: 20px;
+}
+
+.EditProfile img {
+  width: 40%;
+  height: 130px;
+  display: grid;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.EditProfile .error {
+  color: red;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 990px) {
+  .EditProfile .text {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=editProfile.css.map */

@@ -1,0 +1,123 @@
+@import '../design/design.scss';
+
+.SendMessg{
+    background-image: url('https://media.istockphoto.com/id/639771896/vector/yellow-vintage-abstract-old-background.jpg?s=612x612&w=0&k=20&c=0fBisIG9yYH7_tQyYMMQh2TIXJCaP3rd8iQBlBbiBHk=');
+    border-radius: 40px;
+   
+}
+.SendMessg , .SelectedBox {
+    width: 98%;
+    margin: auto;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+  
+    position: relative;
+
+
+}
+
+.SelectedBox{
+    height: 40px;
+    padding: 5px 12px;
+    color: #333;
+    border: inherit;
+    margin-left: 0;
+    border-radius: 10px;
+   
+  
+}
+
+.SendMessg textarea {
+    border: 1px solid $firstColor;
+    padding: 13px;
+    color: #333;
+    width: 100%;
+    height: 44.5vh;
+    font-size: 17px;
+    // box-shadow: 1px 1px 3px #fff;
+    background-color: rgb(240, 186, 86,0);
+    border: none;
+    outline: none;
+    font-family: $font;
+
+}
+
+.SendMessg p {
+    font-size: 17px;
+    margin: 10px 2px;
+    color: rgb(92, 91, 91);
+    display: block;
+    font-family: $font;
+    
+}
+.SendMessg .homePageText{
+    display: none
+}
+
+.sendMessg-btn {
+    @include btn;
+    display: block;
+    /* change this from inline-block */
+    // width:20%; /* setting the width */
+    margin: 0 auto;
+    /* this will center  it */
+    margin-top: 10px;
+    border-radius: 15px;
+
+
+}
+
+.sendMessg-btn:hover {
+    @include btnHover;
+}
+
+.Send .alert {
+
+    background: $secondColor;
+    color: #fff;
+
+    padding-top: 7px;
+    padding-left: 15px;
+    border-left: 6px solid rgb(67, 170, 67);
+    font-size: 15px;
+
+
+
+}
+
+.Send .alertText {
+
+    width: 90%;
+    padding-top: 5px;
+    word-wrap: break-word;
+}
+
+.Send .close {
+
+    margin-left: 94%;
+    margin-top: -27px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.Send .close:hover {
+    color: #888;
+}
+
+@media screen and (max-width: 990px) {
+
+    .SendMessg ,.SelectedBox  {
+
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+     
+     
+
+    }
+   
+
+
+}

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MedievalSharp', cursive;
+  outline-color: #a5b4fc;
+}
+
+html, body {
+  width: 100vw;
+  background: linear-gradient(45deg, #D1E5F0, #F6F6F6, #D1E5F0, #F6F6F6, #D1E5F0) !important;
+}
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+
+
+.SendMessg {
+  background-image: url("https://media.istockphoto.com/id/639771896/vector/yellow-vintage-abstract-old-background.jpg?s=612x612&w=0&k=20&c=0fBisIG9yYH7_tQyYMMQh2TIXJCaP3rd8iQBlBbiBHk=");
+  border-radius: 40px;
+}
+
+.SendMessg, .SelectedBox {
+  width: 98%;
+  margin: auto;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  position: relative;
+}
+
+.SelectedBox {
+  height: 40px;
+  padding: 5px 12px;
+  color: #333;
+  border: inherit;
+  margin-left: 0;
+  border-radius: 10px;
+}
+
+.SendMessg textarea {
+  border: 1px solid #209bdd;
+  padding: 13px;
+  color: #333;
+  width: 100%;
+  height: 44.5vh;
+  font-size: 17px;
+  background-color: rgba(240, 186, 86, 0);
+  border: none;
+  outline: none;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.SendMessg p {
+  font-size: 17px;
+  margin: 10px 2px;
+  color: rgb(92, 91, 91);
+  display: block;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.SendMessg .homePageText {
+  display: none;
+}
+
+.sendMessg-btn {
+  width: 160px;
+  border: none;
+  padding: 8px 0;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: #209bdd;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  /* change this from inline-block */
+  margin: 0 auto;
+  /* this will center  it */
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.sendMessg-btn:hover {
+  color: #209bdd;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #209bdd;
+}
+
+.Send .alert {
+  background: rgb(140, 233, 128);
+  color: #fff;
+  padding-top: 7px;
+  padding-left: 15px;
+  border-left: 6px solid rgb(67, 170, 67);
+  font-size: 15px;
+}
+
+.Send .alertText {
+  width: 90%;
+  padding-top: 5px;
+  word-wrap: break-word;
+}
+
+.Send .close {
+  margin-left: 94%;
+  margin-top: -27px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.Send .close:hover {
+  color: #888;
+}
+
+@media screen and (max-width: 990px) {
+  .SendMessg, .SelectedBox {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=sendMessage.css.map */
