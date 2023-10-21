@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+html, body {
+  width: 100vw;
+  background: linear-gradient(45deg, #D1E5F0, #F6F6F6, #D1E5F0, #F6F6F6, #D1E5F0) !important;
+}
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+.continer{
+  position: relative;
+  zIndex: 1;
+
+}
+
+.HomePage {
+  height: 100%;
+  position: absolute;
+
+}
+
+.intro {
+  margin-top: 73px;
+  background-color: rgba(250, 44, 44, 0.8);
+  width: 100%;
+  box-shadow: 2px 2px 2px rgb(202, 202, 202);
+  margin-right: 10px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+
+
+
+
+.intro h6 {
+  text-shadow: 2px 2px 2px rgb(156, 156, 156);
+}
+
+.hidScrollText {
+  padding: 5px 5px 0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.HomePage .intro p:first-child {
+  margin-top: 0px;
+}
+
+.intro p {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  margin-top: -10px;
+}
+
+
+
+
+
+
+.HomePage .secondSection {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.SendMessg {
+  margin-top: 0.5%;
+  width: 90%;
+  z-index: 4;
+  height: 80vh;
+}
+
+
+
+.HomePage .SelectedBox {
+  border: 1px solid rgb(177, 176, 176);
+}
+
+.HomePage .SendMessg p {
+  padding: 0;
+}
+
+.HomePage .SendMessg .loginText {
+  padding: 0;
+  font-size: 16px;
+  display: none;
+}
+
+.HomePage .SendMessg .homePageText {
+  display: block;
+}
+
+.welcome1 {
+  font-size: 20px;
+}
+
+.handPhoto {
+  width: 30px;
+  margin-top: -5px;
+}
+
+.homePagephoto.second {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .homePagephoto {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .HomePage .SendMessg {
+    width: 98%;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 1%;
+    height: 85vh;
+  }
+  .homePagephoto {
+    position: absolute;
+    display: none;
+  }
+  .homePagephoto.second {
+    position: absolute;
+    display: block;
+  }
+}/*# sourceMappingURL=HomePage.css.map */

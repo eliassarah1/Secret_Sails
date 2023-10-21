@@ -1,0 +1,74 @@
+@import '../../design/design.scss';
+
+.EditProfile {
+    width: 104.5%;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.EditProfile h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.EditProfile .input {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+
+}
+
+.EditProfile .text {
+    position: absolute;
+    left: 3%;
+    width: 20%;
+}
+
+.EditProfile .input,
+.EditProfile img {
+
+    // margin-left: 120px ;
+
+}
+
+.EditProfile input {
+    height: 40px;
+    width: 90%;
+    padding: 5px;
+
+
+}
+
+.EditProfile .img {
+    margin-top: 20px;
+}
+
+.EditProfile img {
+
+    width: 40%;
+    height: 130px;
+    display: grid;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+
+.EditProfile .error {
+    color: red;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 990px) {
+
+
+    .EditProfile .text {
+        position: relative;
+        left: 0%;
+        width: 100%;
+    }
+
+
+
+}

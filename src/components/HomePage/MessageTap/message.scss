@@ -1,0 +1,187 @@
+@import '../../design/design.scss';
+
+.Messages {
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.MessagesCont {
+    position: absolute;
+    display: flex;
+    margin-top: $marginTop;
+
+
+}
+
+.MessagesBox {
+
+    position: relative;
+    width: 55vw;
+    box-shadow: 2px 4px 8px #6b728040;
+    height: max-content;
+    max-height: 86vh;
+    margin: 10px;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255, 0.7);
+
+
+    // padding: 20px;
+}
+
+.Messages .noMessg {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 0;
+    height: 100vh;
+    font-size: 20px;
+    margin-top: -80px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.message {
+
+    margin: 5px 0px 0px 0px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 13px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -65%;
+
+
+}
+
+.deleteMessg {
+    animation: zoom forwards 0.7s ease-out 1;
+}
+
+.messageDetails {
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+
+    // display: flex;
+
+
+}
+
+.message img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+.messageDate {
+    //   position: absolute;
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 13px;
+}
+
+.message h5 {
+    position: absolute;
+    width: 60%;
+    cursor: pointer;
+    @include overFlowText;
+}
+
+.message .read {
+    position: absolute;
+    display: inline-block;
+    margin-left: 70%;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    // padding: 2px;
+    background-color: rgb(64, 151, 233);
+}
+
+.message .fa-trash-o {
+    position: absolute;
+    display: inline-block;
+    margin-left: 75%;
+    width: 15px;
+    height: 45px;
+    color: red;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.messageText {
+    position: absolute;
+    margin-top: 30px;
+    width: 75%;
+    font-family: $font;
+    font-size: 17px;
+    @include overFlowText;
+}
+
+.MessagesCont .modle {
+    display: none;
+
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        width: 250px;
+        min-width: 250px;
+        opacity: 1;
+        transform-origin: 125px 125px;
+    }
+
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        width: 0;
+        min-width: 0;
+        transform: scale(0);
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+
+    .MessagesBox {
+        width: 95vw;
+
+        margin-bottom: 15px;
+    }
+
+    .MessagesCont {
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+
+
+    }
+
+    .MessagesCont.modle {
+        display: block;
+    }
+
+    .MessagesCont .selectMess {
+        display: none;
+    }
+
+    .Messages .noMessg {
+        margin-top: 81.5vh;
+    }
+
+
+
+}

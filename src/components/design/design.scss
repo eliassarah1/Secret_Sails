@@ -1,0 +1,72 @@
+$firstColor: #209bdd;
+$secondColor: rgb(140, 233, 128);
+$font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$marginTop: 80px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+
+html,
+body {
+  width: 100vw;
+
+  // height: 100%;
+  background: linear-gradient(45deg, #D1E5F0, #F6F6F6, #D1E5F0, #F6F6F6, #D1E5F0) !important;
+
+
+}
+
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+
+}
+
+@mixin overFlowText() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+@mixin btn() {
+
+  width: 160px;
+  border: none;
+  padding: 8px 0;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: $firstColor;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+
+
+
+}
+
+@mixin btnHover() {
+  color: $firstColor;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid $firstColor;
+}
+
+.Video {
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  width: 100%;
+  pointer-events: none
+}

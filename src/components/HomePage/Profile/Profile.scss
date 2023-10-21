@@ -1,0 +1,191 @@
+@import '../../design/design.scss';
+
+.Profile {
+  background-image: url("../../../photo/profilePhoto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+
+}
+
+.imgProfile,
+.Profile h2,
+.buttons button {
+  background: rgb(61, 61, 61);
+  color: #fff;
+  box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+}
+
+.Profile .ProfileCont {
+  position: absolute;
+  width: 100%;
+  padding: 140px 30px 120px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: $marginTop ;
+  background: rgb(51, 51, 51, 0.7);
+  box-shadow: -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+  height: 100vh;
+  
+
+}
+
+.Profile h2 {
+  margin-top: -85px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+  color: #fff;
+  border-radius: 9px;
+}
+
+.Profile .emojie {
+  width: 50px;
+}
+
+.imgProfile {
+  border-radius: 50%;
+  padding: 10px;
+  width: 160px;
+  height: 150px;
+  // margin-top: -100px;
+}
+
+.Profile .icon {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.Profile .icon i {
+  position: relative;
+  z-index: 9;
+}
+
+.Profile .icon.edit {
+  right: 35px;
+  font-size: 30px;
+  color: #fff;
+}
+
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+
+
+}
+
+.Profile .Username {
+  font-size: 23px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 90vw;
+  @include overFlowText;
+  margin: 10px 0 5px 0;
+}
+
+.Profile .Email {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 0 20px 0;
+  max-width: 90vw;
+  @include overFlowText;
+}
+
+
+
+.Profile .icon:hover::before,
+.buttons button:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #333;
+  box-shadow: inset -3px -3px 7px #ffffff,
+    inset 3px 3px 5px #ceced1;
+}
+
+.buttons button:hover:before {
+  z-index: -1;
+  border-radius: 5px;
+}
+
+
+.Profile .buttons {
+ display: flex;
+  width: 40%;
+  height: 10%;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.buttons button {
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  @include overFlowText;
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+
+  z-index: 4;
+}
+
+.buttons div {
+  color: $firstColor ;
+  font-weight: bold;
+}
+
+.buttons button:first-child {
+  margin-right: 5px;
+}
+
+.buttons button:last-child {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 990px) {
+
+  .Profile .ProfileCont,
+  .Profile .buttons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+
+  .Profile .buttons {
+    display: block;
+    
+   
+   }
+   .Profile button{
+    margin-top: 10px;
+   }
+}

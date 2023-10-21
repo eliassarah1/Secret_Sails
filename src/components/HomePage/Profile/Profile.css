@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+html, body {
+  width: 100vw;
+  background: linear-gradient(45deg, #D1E5F0, #F6F6F6, #D1E5F0, #F6F6F6, #D1E5F0) !important;
+}
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+
+
+
+.imgProfile,
+.Profile h2,
+.buttons button {
+  background: rgb(61, 61, 61);
+  color: #fff;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.Profile .ProfileCont {
+  position: fixed;
+  width: 100%;
+  padding: 50px 30px 50px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+  background: rgba(51, 51, 51, 0.7);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  height: 50vh;
+}
+
+.Profile h2 {
+  margin-top: -85px;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
+  color: #fff;
+  border-radius: 9px;
+}
+
+.Profile .emojie {
+  width: 50px;
+}
+
+.imgProfile {
+  border-radius: 50%;
+  padding: 10px;
+  width: 160px;
+  height: 150px;
+}
+
+.Profile .icon {
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.Profile .icon i {
+  position: relative;
+  z-index: 9;
+}
+
+.Profile .icon.edit {
+  right: 35px;
+  font-size: 30px;
+  color: #fff;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Profile .Username {
+  font-size: 23px;
+  font-weight: 500;
+  color: #fff;
+  max-width: 90vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 0 5px 0;
+}
+
+.Profile .Email {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 0 20px 0;
+  max-width: 90vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Profile .icon:hover::before,
+.buttons button:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #333;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+
+.buttons button:hover:before {
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.Profile .buttons {
+  display: flex;
+  width: 40%;
+  height: 10%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buttons button {
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.buttons div {
+  color: #209bdd;
+  font-weight: bold;
+}
+
+.buttons button:first-child {
+  margin-right: 5px;
+}
+
+.buttons button:last-child {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 990px) {
+  .Profile .ProfileCont,
+  .Profile .buttons {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .Profile .buttons {
+    display: block;
+  }
+  .Profile button {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=Profile.css.map */

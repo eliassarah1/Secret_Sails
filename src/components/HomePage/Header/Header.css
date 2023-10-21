@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MedievalSharp', cursive;
+  outline-color: #a5b4fc;
+}
+
+html, body {
+  width: 100vw;
+  background: linear-gradient(45deg, #D1E5F0, #F6F6F6, #D1E5F0, #F6F6F6, #D1E5F0) !important;
+}
+
+p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+.Video {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.navbar {
+  z-index: 5;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+  background-color: #209bdd;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+}
+
+.Header .logo {
+  width: 55px;
+  height: 55px;
+  margin: 0;
+
+
+}
+
+.Header .Dropdown.dropdown-toggle.btn.btn-primary::after {
+  display: none;
+}
+
+.Header .img {
+  width: 50px;
+  height: 50px;
+  margin-top: -2px;
+}
+
+.Header a {
+  color: #fff;
+  margin: auto;
+  margin-left: 50px;
+  font-size: 16px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.more a {
+  margin-left: 7px;
+}
+
+.Header .header,
+.Header a.active {
+  color: rgb(208, 208, 226);
+  text-shadow: 3px 3px 3px rgb(100, 100, 100);
+}
+
+.Header a:hover {
+  color: rgb(207, 207, 228);
+}
+
+.Header .Dropdown.dropdown-toggle.btn.btn-primary.Dropdown,
+.Header .Dropdown.dropdown-toggle.btn.btn-primary.Dropdown:hover,
+.Header .Dropdown.dropdown-toggle.btn.btn-primary.active,
+.Header .Dropdown.dropdown-toggle.btn.btn-primary:focus {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.Header .userName {
+  display: flex;
+  justify-content: right;
+  margin-top: 7px;
+  z-index: 8;
+}
+
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  .Header .userName {
+    justify-content: left;
+    margin-left: 40px;
+  }
+  .Header .img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 -5px 40px;
+  }
+  .Header a {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=Header.css.map */
+@media screen and (max-width: 500px){
+
+  .Header .logo {
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    margin-left: -7vw;
+    margin-right: 60px;
+  }
+
+}
